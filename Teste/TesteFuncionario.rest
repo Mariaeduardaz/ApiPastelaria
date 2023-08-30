@@ -16,7 +16,6 @@ content-type: application/json
     "matricula": "12345",
     "grupo": 1
 }
-
 ### Verbo PUT – atualiza
 PUT http://127.0.0.1:8000/funcionario/2 HTTP/1.1
 content-type: application/json
@@ -29,6 +28,5 @@ content-type: application/json
     "matricula": "54321",
     "grupo": 2
 }
-
 ### Verbo DELETE - excluir
 DELETE http://127.0.0.1:8000/funcionario/3 HTTP/1.1
