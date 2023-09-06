@@ -2,22 +2,22 @@
 GET http://localhost:8000/funcionario/ HTTP/1.1
 
 ### Verbo GET – listar um
-GET http://localhost:8000/funcionario/10 HTTP/1.1
+GET http://localhost:8000/funcionario/1 HTTP/1.1 #Consulta
 
 ### Verbo POST – adicionar
-POST http://127.0.0.1:8000/funcionario/ HTTP/1.1
+POST http://127.0.0.1:8000/funcionario/ HTTP/1.1 #Inserir
 content-type: application/json
 
 {
-    "nome": "Abc da Silva",
-    "cpf": "01923874656",
-    "telefone": "49988234567",
-    "senha": "bolinhas",
-    "matricula": "12345",
+    "nome": "Abcd da ilva",
+    "cpf": "019238656",
+    "telefone": "4998834567",
+    "senha": "bolis",
+    "matricula": "145",
     "grupo": 1
 }
 ### Verbo PUT – atualiza
-PUT http://127.0.0.1:8000/funcionario/2 HTTP/1.1
+PUT http://127.0.0.1:8000/funcionario/1 HTTP/1.1 #edita
 content-type: application/json
 
 {
@@ -29,4 +29,4 @@ content-type: application/json
     "grupo": 2
 }
 ### Verbo DELETE - excluir
-DELETE http://127.0.0.1:8000/funcionario/3 HTTP/1.1
+DELETE http://127.0.0.1:8000/funcionario/1 HTTP/1.1
