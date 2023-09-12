@@ -10,8 +10,8 @@ content-type: application/json
 
 {
     
-    "nome": "pastel de carne",
-    "descricao": "muito saborosa",
+    "nome": "pastel decarne",
+    "descricao": "muito aborosa",
     "valor_unitario": 12
     
 }
