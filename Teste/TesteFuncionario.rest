@@ -1,11 +1,16 @@
 ### Verbo GET – listar todos
 GET http://localhost:8000/funcionario/ HTTP/1.1
-
+x-token : abcBolinhasToken
+x-key : abcBolinhasKey
 ### Verbo GET – listar um
 GET http://localhost:8000/funcionario/1 HTTP/1.1 #Consulta
+x-token : abcBolinhasTokenn1
+x-key : abcBolinhasKey
 
 ### Verbo POST – adicionar
 POST http://127.0.0.1:8000/funcionario/ HTTP/1.1 #Inserir
+x-token : abcBolinhasToken
+x-key : abcBolinhasKey
 content-type: application/json
 
 {
@@ -19,6 +24,8 @@ content-type: application/json
 ### Verbo PUT – atualiza
 PUT http://127.0.0.1:8000/funcionario/1 HTTP/1.1 #edita
 content-type: application/json
+x-token : abcBolinhasToken
+x-key : abcBolinhasKey
 
 {
     "nome": "Bolinhas dos Testes",
@@ -30,3 +37,5 @@ content-type: application/json
 }
 ### Verbo DELETE - excluir
 DELETE http://127.0.0.1:8000/funcionario/1 HTTP/1.1
+x-token : abcBolinhasToken
+x-key : abcBolinhasKey

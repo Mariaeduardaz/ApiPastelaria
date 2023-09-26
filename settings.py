@@ -13,6 +13,10 @@ RELOAD = os.getenv("RELOAD")
 DB_SGDB = os.getenv("DB_SGDB")
 DB_NAME = os.getenv("DB_NAME")
 
+# Configurações Segurança da API
+X_TOKEN = os.getenv("X_TOKEN")
+X_KEY = os.getenv("X_KEY")
+
 # Ajusta STR_DATABASE conforme gerenciador escolhido
 if DB_SGDB == 'sqlite': # SQLite
   STR_DATABASE = f"sqlite:///{DB_NAME}.db"
