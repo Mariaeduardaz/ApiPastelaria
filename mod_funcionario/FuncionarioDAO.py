@@ -1,11 +1,16 @@
-# import da persistência
+# import da segurança
+from fastapi import Depends
+import Security
 
+# import da persistência
 from fastapi import APIRouter
 from mod_funcionario.Funcionario import Funcionario
 import db
 from mod_funcionario.FuncionarioModel import FuncionarioDB
 
-router = APIRouter()
+# dependências de forma global
+router = APIRouter( dependencies=[Depends(Security.verify_token), Depends(Security.verify_key)] )
+
 
 @router.get("/funcionario/", tags=["Funcionário"])
 def get_funcionario(f: Funcionario):
